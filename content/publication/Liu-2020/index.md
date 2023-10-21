@@ -1,13 +1,13 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Online defects detection method for gearboxcover based on the four-source photometric stereo method"
-authors: [Haoyue Liu, Xiyang Wu*, Ning Yan, Zexiao Li, Xiaodong Zhang]
-date: 2020-09-05T16:23:35-07:00
+title: "A novel image registration-based dynamic photometric stereo method for online defect detection in aluminum alloy castings"
+authors: [Haoyue Liu, Xiyang Wu, Ning Yan, Zexiao Li, Xiaodong Zhang]
+date: 2023-09-01T18:04:35-07:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2020-09-24T18:04:35-07:00
+publishDate: 2023-09-01T18:04:35-07:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -16,13 +16,13 @@ publishDate: 2020-09-24T18:04:35-07:00
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "IEEE Transactions on Instrumentation & Measurement (Manuscript Submitted)"
+publication: "Digital Signal Processing, Volume 141, September 2023, 104165"
 publication_short: ""
 
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "This project intends to realize the online scratch inspection tasks on the surface of the complex components. The deviation introduced by conveyer is compensated with shape template matching. The surface variation is reconstructed through photometric stereo method, which helps to extract the defect via local grayscale comparsion."
+summary: "Digital Signal Processing, Vol. 141, Sep 2023"
 
 tags: []
 categories: []
@@ -36,7 +36,7 @@ featured: True
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: https://www.sciencedirect.com/science/article/abs/pii/S1051200423002609
 url_code:
 url_dataset:
 url_poster:
@@ -49,7 +49,7 @@ url_video:
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "featured.png"
+  caption: ""
   focal_point: ""
   preview_only: false
 
@@ -67,5 +67,16 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
-The photometric stereo method is effective in online inspection tasks, but its performance could be negatively affected by the spatial deviation in raw image, which necessarily exists in the online inspection environment. This article presents an online scratch detection method based on the four-source photometric stereo method. Considering the size of the component, the system divides the inspection process into several locations and generates the standard template covering the whole component beforehand. Once the component approaches one of the presupposed locations, lights from different directions turn on successively and the inspection system acquires images under dim lateral lights. After acquisition, the system compensates the images acquired for their spatial deviation, and coordinates them on the standard template. After coordination, the system extracts the inspection region in the coordinated images, generates the curvature image with the photometric stereo method and detects scratches in the curvature image. Two experiments are designed to verify the feasibility of the inspection method and evaluate the system's performance in the online inspection environment. According to the result, the system's performance meets the accuracy requirements, which verifies the feasibility of this inspection method.
 ---
+The adoption of three-dimensional (3D) measurement technology for parts surface defect detection can improve inspection reliability. For online inspection purposes, 3D measurement technologies must possess the characteristics of high speed and high efficiency. The photometric stereo method is a potential 3D measurement method with high speed and low cost. However, the traditional photometric stereo method is unsuitable for dynamic scenes due to its initial design for static scenes. In this paper, we propose a novel dynamic photometric stereo method based on an image registration method. To achieve fast speed and high efficiency, we reduce the computational cost by automatically generating regions of interest (ROI). Additionally, we innovatively map the depth information (the surface normal vectors) to a mean curvature map of the surface and use it to detect defects, which combines the robustness of 3D methods and the fast speed of 2D methods. We designed experiments and the results showed that our method can detect defects on the surfaces of aluminum alloy castings accurately and robustly in an online manner. This paper also aims to reveal the importance of utilizing multidimensional information in high-speed online inspections.
+```
+@article{liu2023novel,
+  title={A novel image registration-based dynamic photometric stereo method for online defect detection in aluminum alloy castings},
+  author={Liu, Haoyue and Wu, Xiyang and Yan, Ning and Yuan, Shuaipeng and Zhang, Xiaodong},
+  journal={Digital Signal Processing},
+  volume={141},
+  pages={104165},
+  year={2023},
+  publisher={Elsevier}
+}
+```

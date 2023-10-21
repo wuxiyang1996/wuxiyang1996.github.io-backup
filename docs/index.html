@@ -241,44 +241,6 @@
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-217727406-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-217727406-1', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
   
 
 
@@ -319,7 +281,7 @@
   <meta property="og:description" content="Ph.D. in Electrical and Computer Engineering"><meta property="og:image" content="https://wuxiyang1996.github.io/images/icon_hu246a7c5ca50c5215763d04ff4b959e84_299833_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://wuxiyang1996.github.io/images/icon_hu246a7c5ca50c5215763d04ff4b959e84_299833_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2021-12-15T10:26:10-08:00">
+    <meta property="og:updated_time" content="2023-09-30T16:23:35-07:00">
   
 
   
@@ -511,7 +473,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#featured" data-target="#featured"><span>Research</span></a>
+          <a class="nav-link " href="/#featured" data-target="#featured"><span>Highlights</span></a>
         </li>
 
         
@@ -548,7 +510,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a>
+          <a class="nav-link " href="/#publication" data-target="#publication"><span>Publications</span></a>
         </li>
 
         
@@ -874,8 +836,15 @@
     
     <h1>Biography</h1>
 
-    <p>I am a first-year Ph.D. student in Electrical and Computer Engineering at University of Maryland. My research interests mainly covers reinforcement learning, machine learning and optimization.</p>
-<p>Previously, I recevied my M.S. Degree from Georgia Institute of Technology and B.Eng. Degree from Tianjin Universtiy. I used to be a research assistant on multi-agent reinforcement learning supervised by Dr. Matthew Gombolay. I also have research experiences about signal processing and data analysis when I worked with Dr. Rishikesan Kamaleswaran.</p>
+    <p>My name is Xiyang Wu. I am a Ph.D. student in Electrical and Computer Engineering at 
+<a href="https://umd.edu/" target="_blank" rel="noopener">University of Maryland, College Park</a> and a member of 
+<a href="https://gamma.umd.edu/" target="_blank" rel="noopener">GAMMA</a> group. My research advisor is Prof. 
+<a href="https://www.cs.umd.edu/people/dmanocha" target="_blank" rel="noopener">Dinesh Manocha</a>. I hold a Master&rsquo;s degree from 
+<a href="https://www.gatech.edu/" target="_blank" rel="noopener">Georgia Institute of Technology</a>, where I was working with Prof. 
+<a href="https://core-robotics.gatech.edu/people/matthew-gombolay/" target="_blank" rel="noopener">Matthew Gombolay</a>. Before that, I earned my Bachelor&rsquo;s in Engineering from 
+<a href="https://www.tju.edu.cn/english/index.htm" target="_blank" rel="noopener">Tianjin University</a>, supervised by Prof. 
+<a href="https://scholar.google.com/citations?user=as6X3L0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Xiaodong Zhang</a>.</p>
+<p>My research interest lies in using the reasoning ability of neural networks and Large Language Models in robot decision-making and navigation tasks. Specifically, incorporating Large Language Models with reinforcement learning approaches in multi-agent coordination, scene understanding, and opponents&rsquo; intention inference when navigating and collaborating under complex and heterogeneous environments.</p>
 
 
     <div class="row">
@@ -887,9 +856,11 @@
           
           <li>Reinforcement Learning</li>
           
-          <li>Machine Learning</li>
+          <li>Autonomous Driving</li>
           
-          <li>Optimization</li>
+          <li>Large Language Model</li>
+          
+          <li>Robotics</li>
           
         </ul>
       </div>
@@ -973,193 +944,6 @@
   
   
 
-  <section id="experience" class="home-section wg-experience   "  >
-    <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Education</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-    
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col ">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border ">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Ph.D. in Electrical and Computer Engineering</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.umd.edu/" target="_blank" rel="noopener">University of Maryland</a></h4>
-            <div class="text-muted exp-meta">
-              Aug 2021 –
-              
-                May 2026
-              
-              
-                <span class="middot-divider"></span>
-                <span>College Park, MD, USA</span>
-              
-            </div>
-            <div class="card-text"><ul>
-<li>Specialization: Control, Signal Processing, Machine Learning</li>
-</ul>
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border ">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">M.S. in Electrical and Computer Engineering</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.gatech.edu/" target="_blank" rel="noopener">Georgia Institute of Technology</a></h4>
-            <div class="text-muted exp-meta">
-              Aug 2019 –
-              
-                May 2021
-              
-              
-                <span class="middot-divider"></span>
-                <span>Atlanta, GA, USA</span>
-              
-            </div>
-            <div class="card-text"><ul>
-<li>Specialization: Signal and Image Processing, Machine Learning</li>
-<li>GPA: 4.0/4.0</li>
-<li>Worked on the medical signal processing, disease prediction model with machine learning, supervised by Dr. Rishikesan Kamaleswaran</li>
-<li>Worked on the heterogeous multi-agent control via reinforcement learning, supervised by Dr. Matthew Gobmolay</li>
-</ul>
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border ">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col ">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">B.Eng. in Electrical Engineering (Honors Class)</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="http://www.tju.edu.cn/english/index.htm" target="_blank" rel="noopener">Tianjin University</a></h4>
-            <div class="text-muted exp-meta">
-              Sep 2015 –
-              
-                Jul 2019
-              
-              
-                <span class="middot-divider"></span>
-                <span>Tianjin, China</span>
-              
-            </div>
-            <div class="card-text"><ul>
-<li>Major: Measuring and Controlling Technologies and Instruments</li>
-<li>GPA: 3.85/4.00 (92/100), Major GPA: 3.96/4.00, Top 5%</li>
-<li>Worked on the online defect detection system with photometric stereo and machine vision methods, supervised by Dr. Xiaodong Zhang</li>
-</ul>
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
   <section id="featured" class="home-section wg-featured   "  >
     <div class="container">
       
@@ -1196,7 +980,7 @@
 
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
-    <h1>Research</h1>
+    <h1>Selected Publications</h1>
     
   </div>
   <div class="col-12 col-lg-8">
@@ -1228,13 +1012,13 @@
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0">
-      <a href="/publication/bark_2021/" >BARK-COVID: An XGBoost Model to Predict Hospitalization at time of COVID-19 Diagnosis</a>
+      <a href="/publication/lancar-2023/" >LANCAR: Leveraging Language for Context-Aware Robot Locomotion in Unstructured Environments</a>
     </h3>
 
     
-    <a href="/publication/bark_2021/" class="summary-link">
+    <a href="/publication/lancar-2023/" class="summary-link">
       <div class="article-style">
-        This project intends to develop a prediction model with machine learning methods for COVID-19 diagnosis. The model reads patients' clinical history, bio-medical measurements and physical features and make binary classification that predicts 30-day hospital admission for COVID-19 patients. The baseline methods include ElasticNet, Gaussian Naive Bayes Classifier and Logistic Regression. The prediction is evaluated by several metrics based on the confusion matrix. The final prediction model achieves an accuracy over 80%.
+        arXiv preprint arXiv:2310.00481 (submitted to ICRA 2024)
       </div>
     </a>
     
@@ -1248,306 +1032,7 @@
         
 
   
-  <span >Blake Anderson</span>, <span >Xiyang Wu*</span>, <span >Theodore M Johnson II</span>, <span >Rebecca Steinberg</span>, <span >Amit Shah</span>, <span >James O&#39;Keefe</span>, <span >Rishikesan Kamaleswaran</span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/publication/bark_2021/" >
-      <img src="/publication/bark_2021/featured_hu13e8e932559b88bf3407275c3d86afed_57062_150x0_resize_lanczos_2.png" alt="BARK-COVID: An XGBoost Model to Predict Hospitalization at time of COVID-19 Diagnosis">
-    </a>
-    
-  </div>
-</div>
-
-      
-    
-      
-        
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/publication/signal_2021/" >Translation Model from PPG to ABP</a>
-    </h3>
-
-    
-    <a href="/publication/signal_2021/" class="summary-link">
-      <div class="article-style">
-        This project intends to develop the translation model that interprets non-invasive blood pressure measurement Photoplethysmography (PPG) into invasive measurement Arterial Blood Pressure (ABP). Several distinct approaches have been made to achieve this goal. The first approach uses generative model for time series translation, while another one extracts indirect measurements for PPG signal and investigate their co-relation with systolic and diastolic blood pressure extracted from ABP signal. Heart Rate Variability (HRV) analysis is also made to achieve an overall image of all kinds of blood pressure measurements.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  
-  <span >Xiyang Wu*</span>, <span >Rishikesan Kamaleswaran</span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/publication/signal_2021/" >
-      <img src="/publication/signal_2021/featured_huef5a15850a9a491067ae984553803a62_91188_150x0_resize_q90_lanczos.jpg" alt="Translation Model from PPG to ABP">
-    </a>
-    
-  </div>
-</div>
-
-      
-    
-      
-        
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/publication/marl_2020/" >Learning Heterogeneous Multi-agent Communication for Joint Perception-Control Tasks</a>
-    </h3>
-
-    
-    <a href="/publication/marl_2020/" class="summary-link">
-      <div class="article-style">
-        Focusing on the coopeartive heterogenous MARL in FireCommander2020 environment, which is highly dynamic and stochastic, this project intends to investigate and propose a multi-agent communication learning framework to improve the cooperative behavior in collaborative Markov games and existing MARL algorithms.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  
-  <span >Xiyang Wu*</span>, <span >Esmaeil Seraj</span>, <span >Matthew Gombolay</span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/marl_2020/Xiyang_Wu_Presentation.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/publication/marl_2020/" >
-      <img src="/publication/marl_2020/featured_hu5196077e5df9255487e6fa485b1cc4fe_42522_150x0_resize_q90_lanczos.jpg" alt="Learning Heterogeneous Multi-agent Communication for Joint Perception-Control Tasks">
-    </a>
-    
-  </div>
-</div>
-
-      
-    
-      
-        
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/publication/rl_2020/" >FireCommander: An Interactive, Probabilistic Multi-agent Environment for Joint Perception-Action Tasks</a>
-    </h3>
-
-    
-    <a href="/publication/rl_2020/" class="summary-link">
-      <div class="article-style">
-        The FireCommander is an interactive, probabilistic joint perception-action reconnaissance environment. In FireCommander game, a composite team of agents must be tasked to optimally deal with a dynamic, propagating wildfire situation in an environment with propagating fire areas and facilities. The team of agents can accomplish their mission by first sensing, communicating the sensed fire-information among each other and then taking action to put the firespots out based on the sensed information. The FireCommander environment can be useful for research topics from Reinforcement Learning to Human-Robot Interaction.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  
-  <span >Esmaeil Seraj</span>, <span >Xiyang Wu*</span>, <span >Matthew Gombolay</span>
+  <span >chak lam shek*</span>, <span >xiyang wu*</span>, <span >dinesh manocha</span>, <span >pratap tokekar</span>, <span >amrit singh bedi (* indicates equal contributions)</span>
       </div>
       
     </div>
@@ -1569,7 +1054,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/rl_2020/2011.00165.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2310.00481.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -1579,28 +1064,16 @@
 
 
 
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/rl_2020/FireCommander2020_Xiyang_Wu.pdf" target="_blank" rel="noopener">
-  Slides
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://raaslab.org/projects/LLM_Context_Estimation/" target="_blank" rel="noopener">
+  Project
 </a>
 
 
 
 
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2011.00165" target="_blank" rel="noopener">
-  Source Document
-</a>
+
+
+
 
 
 
@@ -1613,8 +1086,8 @@
     
     
     
-    <a href="/publication/rl_2020/" >
-      <img src="/publication/rl_2020/featured_hu7738197b7e34727659379f1a250085c4_99539_150x0_resize_q90_lanczos.jpg" alt="FireCommander: An Interactive, Probabilistic Multi-agent Environment for Joint Perception-Action Tasks">
+    <a href="/publication/lancar-2023/" >
+      <img src="/publication/lancar-2023/featured_huf38e219abef5214c59b51f2d7a4999c7_406406_150x0_resize_lanczos_2.png" alt="LANCAR: Leveraging Language for Context-Aware Robot Locomotion in Unstructured Environments">
     </a>
     
   </div>
@@ -1646,13 +1119,13 @@
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0">
-      <a href="/publication/liu-2020/" >Online defects detection method for gearboxcover based on the four-source photometric stereo method</a>
+      <a href="/publication/liu-2020/" >A novel image registration-based dynamic photometric stereo method for online defect detection in aluminum alloy castings</a>
     </h3>
 
     
     <a href="/publication/liu-2020/" class="summary-link">
       <div class="article-style">
-        This project intends to realize the online scratch inspection tasks on the surface of the complex components. The deviation introduced by conveyer is compensated with shape template matching. The surface variation is reconstructed through photometric stereo method, which helps to extract the defect via local grayscale comparsion.
+        Digital Signal Processing, Vol. 141, Sep 2023
       </div>
     </a>
     
@@ -1666,7 +1139,7 @@
         
 
   
-  <span >Haoyue Liu</span>, <span >Xiyang Wu*</span>, <span >Ning Yan</span>, <span >Zexiao Li</span>, <span >Xiaodong Zhang</span>
+  <span >haoyue liu</span>, <span >xiyang wu</span>, <span >ning yan</span>, <span >zexiao li</span>, <span >xiaodong zhang</span>
       </div>
       
     </div>
@@ -1683,8 +1156,14 @@
 
 
   
+    
+  
 
 
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.sciencedirect.com/science/article/abs/pii/S1051200423002609" target="_blank" rel="noopener">
+  PDF
+</a>
 
 
 
@@ -1711,7 +1190,126 @@
     
     
     <a href="/publication/liu-2020/" >
-      <img src="/publication/liu-2020/featured_hu6f074cf7bd6448bb2d16b62dedecb05b_261582_150x0_resize_lanczos_2.PNG" alt="Online defects detection method for gearboxcover based on the four-source photometric stereo method">
+      <img src="/publication/liu-2020/featured_hu8f2b51de290178b5e259fc7bf0240bab_193423_150x0_resize_lanczos_2.PNG" alt="A novel image registration-based dynamic photometric stereo method for online defect detection in aluminum alloy castings">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/iplan-2023/" >iPLAN: Intent-Aware Planning in Heterogeneous Traffic via Distributed Multi-Agent Reinforcement Learning</a>
+    </h3>
+
+    
+    <a href="/publication/iplan-2023/" class="summary-link">
+      <div class="article-style">
+        Accepted by CoRL 2023 with <strong>Oral Presentation</strong> (<strong>Accept Rate 6.6%</strong>), Received <strong>Best Paper Award</strong> at IROS 2023 MRS Workshop
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  
+  <span >xiyang wu</span>, <span >rohan chandra</span>, <span >tianrui guan</span>, <span >amrit singh bedi</span>, <span >dinesh manocha</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2306.06236.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/wuxiyang1996/iPLAN" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/iPLAN-2023/IROS2023_Poster.pdf" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/iplan-2023/" >
+      <img src="/publication/iplan-2023/featured_hu12d622626790a113f79109f82451685a_290521_150x0_resize_lanczos_2.png" alt="iPLAN: Intent-Aware Planning in Heterogeneous Traffic via Distributed Multi-Agent Reinforcement Learning">
     </a>
     
   </div>
@@ -1766,7 +1364,7 @@
   
   
 
-  <section id="projects" class="home-section wg-portfolio   "  >
+  <section id="publications" class="home-section wg-pages   "  >
     <div class="container">
       
 
@@ -1777,79 +1375,142 @@
 
 
 
+  
 
 
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
 
-    <h1>Projects</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+<div class="row ">
+  
     
-
-  </div>
+      <div class="col-12 col-lg-4 section-heading">
+        <h1>Publications</h1>
+        
+      </div>
+    
+  
   <div class="col-12 col-lg-8">
 
+    <div class="alert alert-note">
+  <div>
+    Quickly discover relevant content by <a href="https://wuxiyang1996.github.io/publication/">filtering publications</a>.
+  </div>
+</div>
 
 
     
-
-    
-
-    <div class=" row js-layout-row ">
       
-
-        
-        
-        
-
-        
-          
-
-
-<div class="col-12 isotope-item ">
-  
-
-
-
-
-
-
-
+        <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
 
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/project/convex_traj/" >Convex Optimization Approach for Car-Like Robot Trajectory Planning</a>
-    </h3>
-
-    
-    <a href="/project/convex_traj/" class="summary-link">
-      <div class="article-style">
-        This project utilizes convex optimization methods to optimize the car-like robots' trajectories generated by sample-based methods. The overall algorithm follows a phased, iterative framework. The first step is to smooth the trajectory shape within the predefined convex searching domain with Elastic Band Stretching method, while the next step is to use MTSOS algorithm to optimize the velocity distribution over the trajectory with respect to the dynamic model. Appropriate modifications are also applied to further improve the optimization performance.
-      </div>
-    </a>
+  <span class="article-metadata li-cite-author">
     
 
-    <div class="stream-meta article-metadata">
+  
+  <span >chak lam shek*</span>, <span >xiyang wu*</span>, <span >dinesh manocha</span>, <span >pratap tokekar</span>, <span >amrit singh bedi (* indicates equal contributions)</span>
+  </span>
+  (2023).
+  <a href="/publication/lancar-2023/">LANCAR: Leveraging Language for Context-Aware Robot Locomotion in Unstructured Environments</a>.
+  arXiv preprint arXiv:2310.00481.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2310.00481.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://raaslab.org/projects/LLM_Context_Estimation/" target="_blank" rel="noopener">
+  Project
+</a>
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
 
       
-
-      
-    </div>
-
     
-    <div class="btn-links">
       
+        <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span >haoyue liu</span>, <span >xiyang wu</span>, <span >ning yan</span>, <span >zexiao li</span>, <span >xiaodong zhang</span>
+  </span>
+  (2023).
+  <a href="/publication/liu-2020/">A novel image registration-based dynamic photometric stereo method for online defect detection in aluminum alloy castings</a>.
+  Digital Signal Processing, Volume 141, September 2023, 104165.
+  
+  <p>
 
 
 
@@ -1864,7 +1525,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/convex_traj/Final_Report.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.sciencedirect.com/science/article/abs/pii/S1051200423002609" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -1883,81 +1544,32 @@
 
 
 
+</p>
 
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/project/convex_traj/" >
-      <img src="/project/convex_traj/featured_huc481276552365ce4ad34e266c5e05428_113968_150x0_resize_q90_lanczos.JPG" alt="Convex Optimization Approach for Car-Like Robot Trajectory Planning">
-    </a>
-    
-  </div>
+  
+  
 </div>
 
-</div>
-
-        
-
       
-
-        
-        
-        
-
-        
-          
-
-
-<div class="col-12 isotope-item ">
-  
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/project/chess_mcts/" >AlphaZero Chess Player</a>
-    </h3>
-
     
-    <a href="/project/chess_mcts/" class="summary-link">
-      <div class="article-style">
-        The AlphaZero chess player is the course project for Robotic Intelligence: Planning in Gatech. The general idea of this project is to utilize the AlphaZero model that is derived from the Monte-Carlo Search Tree (MCTS) on the partially observable chess playing environment. To estimate the opponent status on the board since it&rsquo;s unavailale for the current player, the practicle filter on king tracking is incorporated with the AlphaZero model.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
       
+        <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
-      
-    </div>
+  
+  
 
+  <span class="article-metadata li-cite-author">
     
-    <div class="btn-links">
-      
+
+  
+  <span >xiyang wu</span>, <span >rohan chandra</span>, <span >tianrui guan</span>, <span >amrit singh bedi</span>, <span >dinesh manocha</span>
+  </span>
+  (2023).
+  <a href="/publication/iplan-2023/">iPLAN: Intent-Aware Planning in Heterogeneous Traffic via Distributed Multi-Agent Reinforcement Learning</a>.
+  7th Annual Conference on Robot Learning (CoRL), Nov. 2023, Atlanta, GA.
+  
+  <p>
 
 
 
@@ -1972,230 +1584,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/chess_mcts/mcts_report.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/project/chess_mcts/" >
-      <img src="/project/chess_mcts/featured_huc481276552365ce4ad34e266c5e05428_60377_150x0_resize_q90_lanczos.jpg" alt="AlphaZero Chess Player">
-    </a>
-    
-  </div>
-</div>
-
-</div>
-
-        
-
-      
-
-        
-        
-        
-
-        
-          
-
-
-<div class="col-12 isotope-item ">
-  
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/project/fake_news/" >Fake News Detection Neural Network and LSTM</a>
-    </h3>
-
-    
-    <a href="/project/fake_news/" class="summary-link">
-      <div class="article-style">
-        Fake News Detection intends to implement the text classification method on the Kaggle fake new dataset and compare the performance of different methods. In this project, the text classification methods involve the supervised methods like SVM, Naive Bayes Classifier and XGBoost, unsupervised methods like KMeans and GMM, and deep learning methods like Neural Network and LSTM.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  
-  <span >Xiyang Wu*</span>, <span >Kai Sun</span>, <span >Ruize Yang</span>, <span >Xuesong Pan</span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/ksun86/ML-Project" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/project/fake_news/" >
-      <img src="/project/fake_news/featured_hu672cc46f60dcb9308bb4357f88c8625c_42933_150x0_resize_q90_lanczos.jpg" alt="Fake News Detection Neural Network and LSTM">
-    </a>
-    
-  </div>
-</div>
-
-</div>
-
-        
-
-      
-
-        
-        
-        
-
-        
-          
-
-
-<div class="col-12 isotope-item ">
-  
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/project/gtsam_manipulator/" >Flying Object Capture via Pincher Manipulator</a>
-    </h3>
-
-    
-    <a href="/project/gtsam_manipulator/" class="summary-link">
-      <div class="article-style">
-        This project intends to plan the trajectory for the Pincher manipulator to capture the flying object with the robotic arm. The mathematical analysis for the manipulator kinematics and dynamics during the capturing task is proposed and veriflied with the MATLAB Robotics Toolbox and GTSAM. The feasiblity of the trajectory plan is verified within several scenarios.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/gtsam_manipulator/CS8803FinalReport_Xiyang_Wu.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2306.06236.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -2206,7 +1595,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/wuxiyang1996/Mobile-Manipulator/" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/wuxiyang1996/iPLAN" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -2215,95 +1604,47 @@
 
 
 
-
-
-
-
-
-
-
-
-    </div>
+  
+  
     
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/iPLAN-2023/IROS2023_Poster.pdf" target="_blank" rel="noopener">
+  Poster
+</a>
 
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/project/gtsam_manipulator/" >
-      <img src="/project/gtsam_manipulator/featured_hud05ca35e872ee9346f02ce0b4f975f4d_31463_150x0_resize_q90_lanczos.jpg" alt="Flying Object Capture via Pincher Manipulator">
-    </a>
-    
-  </div>
+
+
+
+
+
+
+
+</p>
+
+  
+  
 </div>
 
-</div>
-
-        
-
       
-
-        
-        
-        
-
-        
-          
-
-
-<div class="col-12 isotope-item ">
-  
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/project/feature_map/" >Content-Weighted Autoencoder for Image Compression</a>
-    </h3>
-
     
-    <a href="/project/feature_map/" class="summary-link">
-      <div class="article-style">
-        This project presents a novel neural network structure for image compression tasks. The network incorporates the importance map that enhances the details in the image to the vanilla ResNet autoencoder. The result confirms the superior compression performance of the convolutional autoencoder with the importance map over the traditional 3-layer convolutional autoencoder and the vanilla ResNet autoencoder.
-      </div>
-    </a>
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
     
 
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
   
-  <span >Xiyang Wu*</span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
+  <span >esmaeil seraj</span>, <span >xiyang wu</span>, <span >matthew gombolay</span>
+  </span>
+  (2020).
+  <a href="/publication/firecommander-2020/">Firecommander: An interactive, probabilistic multi-agent environment for joint perception-action tasks</a>.
+  arXiv:2011.00165.
+  
+  <p>
 
 
 
@@ -2318,19 +1659,26 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/feature_map/ECE_6258_Final_Project_Xiyang_Wu.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2011.00165.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 
+
+
+
+
+
+
+
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/xwu391/6258-DIP/" target="_blank" rel="noopener">
-  Code
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/FireCommander_2020/FireCommander2020_Xiyang_Wu.pdf" target="_blank" rel="noopener">
+  Slides
 </a>
 
 
@@ -2338,503 +1686,18 @@
 
 
 
+</p>
 
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/project/feature_map/" >
-      <img src="/project/feature_map/featured_hu5c08e00830d21d0cd3956150d70c0b89_153141_150x0_resize_lanczos_2.PNG" alt="Content-Weighted Autoencoder for Image Compression">
-    </a>
-    
-  </div>
+  
+  
 </div>
 
-</div>
-
-        
-
       
-
-        
-        
-        
-
-        
-          
-
-
-<div class="col-12 isotope-item ">
-  
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/project/buzzcup/" >BuzzCup - Multi-agent Motion Simulator based on PID, OpenGL and MPI</a>
-    </h3>
-
-    
-    <a href="/project/buzzcup/" class="summary-link">
-      <div class="article-style">
-        Buzzcup intends to simulate the PID control on the circluar motion of multiple agents. The environment is based on the OpenGL and each agent is controlled by a independent thread that communicates via MPI.
-      </div>
-    </a>
     
 
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  
-  <span >Xiyang Wu*</span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/wuxiyang1996/6122-Advanced-Programing/tree/master/BuzzCup" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.youtube.com/watch?v=bjaHEkHu6TA" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
     
     
     
-    <a href="/project/buzzcup/" >
-      <img src="/project/buzzcup/featured_hudd1dc1e10f0e111d1b33fa63e9e826a8_193465_150x0_resize_lanczos_2.PNG" alt="BuzzCup - Multi-agent Motion Simulator based on PID, OpenGL and MPI">
-    </a>
-    
-  </div>
-</div>
-
-</div>
-
-        
-
-      
-
-        
-        
-        
-
-        
-          
-
-
-<div class="col-12 isotope-item ">
-  
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/project/chess/" >The OpenGL based Chess</a>
-    </h3>
-
-    
-    <a href="/project/chess/" class="summary-link">
-      <div class="article-style">
-        This project intends to design the 3D chess with OpenGL.The enviroment setting could be changed by the user, like lifting up or down the view point, rotating the chessboard, moving the pieces and switching the model between detailed and simplified ones.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  
-  <span >Xiyang Wu*</span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/wuxiyang1996/6122-Advanced-Programing/tree/master/Chessboard" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://studio.youtube.com/video/bzfPp8PH2g4/edit/basic" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/project/chess/" >
-      <img src="/project/chess/featured_hudcfc93640481b0aa1695a07500024bc3_117092_150x0_resize_lanczos_2.png" alt="The OpenGL based Chess">
-    </a>
-    
-  </div>
-</div>
-
-</div>
-
-        
-
-      
-
-        
-        
-        
-
-        
-          
-
-
-<div class="col-12 isotope-item ">
-  
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/project/photometric/" >Online Component Scratch Inspection System Based on the Photometric Stereo Method</a>
-    </h3>
-
-    
-    <a href="/project/photometric/" class="summary-link">
-      <div class="article-style">
-        This project intends to realize the online scratch inspection tasks on the surface of the complex components. The deviation introduced by conveyer is compensated with shape template matching. The surface variation is reconstructed through photometric stereo method, which helps to extract the defect via local grayscale comparsion.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  
-  <span >Haoyue Liu</span>, <span >Xiyang Wu*</span>, <span >Ning Yan</span>, <span >Zexiao Li</span>, <span >Xiaodong Zhang</span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/project/photometric/" >
-      <img src="/project/photometric/featured_hu6f074cf7bd6448bb2d16b62dedecb05b_261582_150x0_resize_lanczos_2.PNG" alt="Online Component Scratch Inspection System Based on the Photometric Stereo Method">
-    </a>
-    
-  </div>
-</div>
-
-</div>
-
-        
-
-      
-
-        
-        
-        
-
-        
-          
-
-
-<div class="col-12 isotope-item ">
-  
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/project/manipulator/" >Design and Simulation of a 5-DOF Writing Manipulator</a>
-    </h3>
-
-    
-    <a href="/project/manipulator/" class="summary-link">
-      <div class="article-style">
-        This project intends to implement the character writing task on an unknown 5-DOF manipulator. The purpose incorporates the analysis of the kinematic and dynamic feature of the manipulator, the mechanical model design and FEA, trajectory planning and basic manipulator control.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  
-  <span >Xiyang Wu*</span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/project/manipulator/" >
-      <img src="/project/manipulator/featured_hu6a5f97fe110976abf4327fa4f256b5b3_522891_150x0_resize_lanczos_2.PNG" alt="Design and Simulation of a 5-DOF Writing Manipulator">
-    </a>
-    
-  </div>
-</div>
-
-</div>
-
-        
-
-      
-    </div>
 
   </div>
 </div>
@@ -2895,6 +1758,19 @@
     
 
     
+    
+      <div class="card experience course">
+        <div class="card-body"><h4 class="card-title exp-title text-muted my-0">Best Paper Award</h4><div class="card-subtitle my-0 article-metadata"><a href="https://djhanove.github.io/IROS23_MRS/" target="_blank" rel="noopener">MRS Workshop at IROS 2023</a><span class="middot-divider"></span>
+
+            Oct 2023
+            
+          </div>
+
+          
+
+          
+        </div>
+      </div>
     
       <div class="card experience course">
         <div class="card-body"><h4 class="card-title exp-title text-muted my-0">Merit Student Award</h4><div class="card-subtitle my-0 article-metadata">Tianjin University<span class="middot-divider"></span>

@@ -241,44 +241,6 @@
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-217727406-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-217727406-1', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
   
 
 
@@ -317,7 +279,7 @@
   <meta property="og:description" content="Ph.D. in Electrical and Computer Engineering"><meta property="og:image" content="https://wuxiyang1996.github.io/images/icon_hu246a7c5ca50c5215763d04ff4b959e84_299833_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://wuxiyang1996.github.io/images/icon_hu246a7c5ca50c5215763d04ff4b959e84_299833_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-09-05T16:23:35-07:00">
+    <meta property="og:updated_time" content="2023-09-01T18:04:35-07:00">
   
 
   
@@ -495,7 +457,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#featured"><span>Research</span></a>
+          <a class="nav-link " href="/#featured"><span>Highlights</span></a>
         </li>
 
         
@@ -532,7 +494,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          <a class="nav-link " href="/#publication"><span>Publications</span></a>
         </li>
 
         
@@ -668,11 +630,7 @@
       <ul>
         
         <li>
-          <a href="/publication/liu-2020/">Online defects detection method for gearboxcover based on the four-source photometric stereo method</a>
-        </li>
-        
-        <li>
-          <a href="/project/photometric/">Online Component Scratch Inspection System Based on the Photometric Stereo Method</a>
+          <a href="/publication/liu-2020/">A novel image registration-based dynamic photometric stereo method for online defect detection in aluminum alloy castings</a>
         </li>
         
       </ul>

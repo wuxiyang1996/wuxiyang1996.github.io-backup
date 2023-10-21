@@ -241,44 +241,6 @@
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-217727406-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-217727406-1', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
   
 
 
@@ -317,7 +279,7 @@
   <meta property="og:description" content="Ph.D. in Electrical and Computer Engineering"><meta property="og:image" content="https://wuxiyang1996.github.io/images/icon_hu246a7c5ca50c5215763d04ff4b959e84_299833_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://wuxiyang1996.github.io/images/icon_hu246a7c5ca50c5215763d04ff4b959e84_299833_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2021-11-02T02:06:07-08:00">
+    <meta property="og:updated_time" content="2023-09-30T16:23:35-07:00">
   
 
   
@@ -495,7 +457,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#featured"><span>Research</span></a>
+          <a class="nav-link " href="/#featured"><span>Highlights</span></a>
         </li>
 
         
@@ -532,7 +494,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          <a class="nav-link " href="/#publication"><span>Publications</span></a>
         </li>
 
         
@@ -685,34 +647,34 @@
     
     
       
-      <li><a href="https://wuxiyang1996.github.io/author/amit-shah/">Amit Shah</a></li>
+      <li><a href="https://wuxiyang1996.github.io/author/amrit-singh-bedi/">Amrit Singh Bedi</a></li>
     
       
-      <li><a href="https://wuxiyang1996.github.io/author/blake-anderson/">Blake Anderson</a></li>
+      <li><a href="https://wuxiyang1996.github.io/author/amrit-singh-bedi-indicates-equal-contributions/">Amrit Singh Bedi (* indicates equal contributions)</a></li>
     
       
-      <li><a href="https://wuxiyang1996.github.io/author/james-okeefe/">James O&#39;Keefe</a></li>
+      <li><a href="https://wuxiyang1996.github.io/author/chak-lam-shek/">Chak Lam Shek*</a></li>
     
       
-      <li><a href="https://wuxiyang1996.github.io/author/rebecca-steinberg/">Rebecca Steinberg</a></li>
+      <li><a href="https://wuxiyang1996.github.io/author/dinesh-manocha/">Dinesh Manocha</a></li>
     
       
-      <li><a href="https://wuxiyang1996.github.io/author/rishikesan-kamaleswaran/">Rishikesan Kamaleswaran</a></li>
+      <li><a href="https://wuxiyang1996.github.io/author/pratap-tokekar/">Pratap Tokekar</a></li>
     
       
-      <li><a href="https://wuxiyang1996.github.io/author/theodore-m-johnson-ii/">Theodore M Johnson II</a></li>
-    
-      
-      <li><a href="https://wuxiyang1996.github.io/author/xiyang-wu/">Xiyang Wu*</a></li>
-    
-      
-      <li><a href="https://wuxiyang1996.github.io/author/esmaeil-seraj/">Esmaeil Seraj</a></li>
-    
-      
-      <li><a href="https://wuxiyang1996.github.io/author/matthew-gombolay/">Matthew Gombolay</a></li>
+      <li><a href="https://wuxiyang1996.github.io/author/xiyang-wu/">Xiyang Wu</a></li>
     
       
       <li><a href="https://wuxiyang1996.github.io/author/haoyue-liu/">Haoyue Liu</a></li>
+    
+      
+      <li><a href="https://wuxiyang1996.github.io/author/ning-yan/">Ning Yan</a></li>
+    
+      
+      <li><a href="https://wuxiyang1996.github.io/author/xiaodong-zhang/">Xiaodong Zhang</a></li>
+    
+      
+      <li><a href="https://wuxiyang1996.github.io/author/zexiao-li/">Zexiao Li</a></li>
     
   </ul>
 

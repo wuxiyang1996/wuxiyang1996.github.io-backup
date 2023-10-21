@@ -241,44 +241,6 @@
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-217727406-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-217727406-1', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
   
 
 
@@ -493,7 +455,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#featured"><span>Research</span></a>
+          <a class="nav-link " href="/#featured"><span>Highlights</span></a>
         </li>
 
         
@@ -530,7 +492,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          <a class="nav-link " href="/#publication"><span>Publications</span></a>
         </li>
 
         
@@ -665,25 +627,13 @@
   <h2>Latest</h2>
   <ul>
     
-      <li><a href="/project/convex_traj/">Convex Optimization Approach for Car-Like Robot Trajectory Planning</a></li>
+      <li><a href="/publication/lancar-2023/">LANCAR: Leveraging Language for Context-Aware Robot Locomotion in Unstructured Environments</a></li>
     
-      <li><a href="/publication/bark_2021/">BARK-COVID: An XGBoost Model to Predict Hospitalization at time of COVID-19 Diagnosis</a></li>
+      <li><a href="/publication/liu-2020/">A novel image registration-based dynamic photometric stereo method for online defect detection in aluminum alloy castings</a></li>
     
-      <li><a href="/publication/signal_2021/">Translation Model from PPG to ABP</a></li>
+      <li><a href="/publication/iplan-2023/">iPLAN: Intent-Aware Planning in Heterogeneous Traffic via Distributed Multi-Agent Reinforcement Learning</a></li>
     
-      <li><a href="/project/chess_mcts/">AlphaZero Chess Player</a></li>
-    
-      <li><a href="/publication/marl_2020/">Learning Heterogeneous Multi-agent Communication for Joint Perception-Control Tasks</a></li>
-    
-      <li><a href="/publication/rl_2020/">FireCommander: An Interactive, Probabilistic Multi-agent Environment for Joint Perception-Action Tasks</a></li>
-    
-      <li><a href="/publication/liu-2020/">Online defects detection method for gearboxcover based on the four-source photometric stereo method</a></li>
-    
-      <li><a href="/project/fake_news/">Fake News Detection Neural Network and LSTM</a></li>
-    
-      <li><a href="/project/gtsam_manipulator/">Flying Object Capture via Pincher Manipulator</a></li>
-    
-      <li><a href="/project/feature_map/">Content-Weighted Autoencoder for Image Compression</a></li>
+      <li><a href="/publication/firecommander-2020/">Firecommander: An interactive, probabilistic multi-agent environment for joint perception-action tasks</a></li>
     
   </ul>
   

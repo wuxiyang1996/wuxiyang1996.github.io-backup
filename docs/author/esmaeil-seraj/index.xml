@@ -5,7 +5,7 @@
     <link>https://wuxiyang1996.github.io/author/esmaeil-seraj/</link>
       <atom:link href="https://wuxiyang1996.github.io/author/esmaeil-seraj/index.xml" rel="self" type="application/rss+xml" />
     <description>Esmaeil Seraj</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 23 Nov 2020 13:29:16 -0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 31 Oct 2020 16:23:35 -0700</lastBuildDate>
     <image>
       <url>https://wuxiyang1996.github.io/images/icon_hu246a7c5ca50c5215763d04ff4b959e84_299833_512x512_fill_lanczos_center_2.png</url>
       <title>Esmaeil Seraj</title>
@@ -13,34 +13,21 @@
     </image>
     
     <item>
-      <title>Learning Heterogeneous Multi-agent Communication for Joint Perception-Control Tasks</title>
-      <link>https://wuxiyang1996.github.io/publication/marl_2020/</link>
-      <pubDate>Mon, 23 Nov 2020 13:29:16 -0800</pubDate>
-      <guid>https://wuxiyang1996.github.io/publication/marl_2020/</guid>
-      <description>&lt;p&gt;Focusing on the coopeartive heterogenous MARL in FireCommander2020 environment, which is highly dynamic and stochastic, this project intends to investigate and propose a multi-agent communication learning framework to improve the cooperative behavior in collaborative Markov games and existing MARL algorithms. This project is still ongoing and expected to be done at the end of November. My responsibilities in this project covers:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Investigate the state-of-the-art multi-agent reinforcement learning algorithms, analyze the characteristics for several popular MARL algorithm, formulate the multi-agent joint perception-control task in FireCommander environment as a POMDP problem&lt;/li&gt;
-&lt;li&gt;Regulate the FireCommander2020 environment for the multi-agent reinforcement learning, incorporate the agent and fire state update, reward computation module within the framework&lt;/li&gt;
-&lt;li&gt;Implement several MARL algorithms IDQN, DIAL, CommNet, QMIX, COMA, etc. on the FireCommander environment to learn the coordination and cooperation in the heterogeneous agent team&lt;/li&gt;
-&lt;li&gt;Implementing the novel experience sharing method for the optimal coordination and cooperation on the FireCommander environment and compare its performance with the benchmark algorithms&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>FireCommander: An Interactive, Probabilistic Multi-agent Environment for Joint Perception-Action Tasks</title>
-      <link>https://wuxiyang1996.github.io/publication/rl_2020/</link>
-      <pubDate>Sat, 31 Oct 2020 02:06:07 -0800</pubDate>
-      <guid>https://wuxiyang1996.github.io/publication/rl_2020/</guid>
-      <description>&lt;p&gt;The FireCommander is an interactive, probabilistic joint perception-action reconnaissance environment in which a composite team of agents (e.g., robots) cooperate to fight dynamic, propagating firespots (e.g., targets). In FireCommander game, a team of agents must be tasked to optimally deal with a wildfire situation in an environment with propagating fire areas and some facilities such as houses, hospitals, power stations, etc. The team of agents can accomplish their mission by first sensing (e.g., estimating fire states), communicating the sensed fire-information among each other and then taking action to put the firespots out based on the sensed information (e.g., dropping water on estimated fire locations). The FireCommander environment can be useful for research topics spanning a wide range of applications from Reinforcement Learning (RL) and Learning from Demonstration (LfD), to Coordination, Psychology, Human-Robot Interaction (HRI) and Teaming. My responsibility in this project covers:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Investigate the state-of-art of the reinforcement learning, learning from demonstration and multi-agent control, establish the agent kinematics and control model&lt;/li&gt;
-&lt;li&gt;Design the simulation environment for the multi-agent firefighting tasks with PyGame based on the real environment setting, fire propagation model, agent kinematics and control model&lt;/li&gt;
-&lt;li&gt;Establish the user-interface with PyQt5 to incorporate the user input or scenario design with the simulation environment, design the data storage and animation reconstruction method&lt;/li&gt;
-&lt;li&gt;Implement the reward function based on the hierarchy importance of target, implement various scenarios to deal with real-world circumstances&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
+      <title>Firecommander: An interactive, probabilistic multi-agent environment for joint perception-action tasks</title>
+      <link>https://wuxiyang1996.github.io/publication/firecommander-2020/</link>
+      <pubDate>Sat, 31 Oct 2020 16:23:35 -0700</pubDate>
+      <guid>https://wuxiyang1996.github.io/publication/firecommander-2020/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;The purpose of this tutorial is to help individuals use the \underline{FireCommander} game environment for research applications. The FireCommander is an interactive, probabilistic joint perception-action reconnaissance environment in which a composite team of agents (e.g., robots) cooperate to fight dynamic, propagating firespots (e.g., targets). In FireCommander game, a team of agents must be tasked to optimally deal with a wildfire situation in an environment with propagating fire areas and some facilities such as houses, hospitals, power stations, etc. The team of agents can accomplish their mission by first sensing (e.g., estimating fire states), communicating the sensed fire-information among each other and then taking action to put the firespots out based on the sensed information (e.g., dropping water on estimated fire locations). The FireCommander environment can be useful for research topics spanning a wide range of applications from Reinforcement Learning (RL) and Learning from Demonstration (LfD), to Coordination, Psychology, Human-Robot Interaction (HRI) and Teaming. There are four important facets of the FireCommander environment that overall, create a non-trivial game: (1) Complex Objectives: Multi-objective Stochastic Environment, (2)Probabilistic Environment: Agents&amp;rsquo; actions result in probabilistic performance, (3) Hidden Targets: Partially Observable Environment and, (4) Uni-task Robots: Perception-only and Action-only agents. The FireCommander environment is first-of-its-kind in terms of including Perception-only and Action-only agents for coordination. It is a general multi-purpose game that can be useful in a variety of combinatorial optimization problems and stochastic games, such as applications of Reinforcement Learning (RL), Learning from Demonstration (LfD) and Inverse RL (iRL).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@misc{seraj2021firecommander,
+      title={FireCommander: An Interactive, Probabilistic Multi-agent Environment for Heterogeneous Robot Teams}, 
+      author={Esmaeil Seraj and Xiyang Wu and Matthew Gombolay},
+      year={2021},
+      eprint={2011.00165},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

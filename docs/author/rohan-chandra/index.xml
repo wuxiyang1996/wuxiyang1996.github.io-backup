@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rohan Chandra | Xiyang Wu</title>
+    <link>https://wuxiyang1996.github.io/author/rohan-chandra/</link>
+      <atom:link href="https://wuxiyang1996.github.io/author/rohan-chandra/index.xml" rel="self" type="application/rss+xml" />
+    <description>Rohan Chandra</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 09 Jun 2023 16:23:35 -0700</lastBuildDate>
+    <image>
+      <url>https://wuxiyang1996.github.io/images/icon_hu246a7c5ca50c5215763d04ff4b959e84_299833_512x512_fill_lanczos_center_2.png</url>
+      <title>Rohan Chandra</title>
+      <link>https://wuxiyang1996.github.io/author/rohan-chandra/</link>
+    </image>
+    
+    <item>
+      <title>iPLAN: Intent-Aware Planning in Heterogeneous Traffic via Distributed Multi-Agent Reinforcement Learning</title>
+      <link>https://wuxiyang1996.github.io/publication/iplan-2023/</link>
+      <pubDate>Fri, 09 Jun 2023 16:23:35 -0700</pubDate>
+      <guid>https://wuxiyang1996.github.io/publication/iplan-2023/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Navigating safely and efficiently in dense and heterogeneous traffic scenarios is challenging for autonomous vehicles (AVs) due to their inability to infer the behaviors or intentions of nearby drivers. In this work, we introduce a distributed multi-agent reinforcement learning (MARL) algorithm for joint trajectory and intent prediction for autonomous vehicles in dense and heterogeneous environments. Our approach for intent-aware planning, iPLAN, allows agents to infer nearby drivers&amp;rsquo; intents solely from their local observations. We model an explicit representation of agents&amp;rsquo; private incentives: Behavioral Incentive for high-level decision-making strategy that sets planning sub-goals and Instant Incentive for low-level motion planning to execute sub-goals. Our approach enables agents to infer their opponents&amp;rsquo; behavior incentives and integrate this inferred information into their decision-making and motion-planning processes. We perform experiments on two simulation environments, Non-Cooperative Navigation and Heterogeneous Highway. In Heterogeneous Highway, results show that, compared with centralized training decentralized execution (CTDE) MARL baselines such as QMIX and MAPPO, our method yields a 4.3% and 38.4% higher episodic reward in mild and chaotic traffic, with 48.1% higher success rate and 80.6% longer survival time in chaotic traffic. We also compare with a decentralized training decentralized execution (DTDE) baseline IPPO and demonstrate a higher episodic reward of 12.7% and 6.3% in mild traffic and chaotic traffic, 25.3% higher success rate, and 13.7% longer survival time.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@inproceedings{wu2023intent, 
+  title={Intent-Aware Planning in Heterogeneous Traffic via Distributed Multi-Agent Reinforcement Learning}, 
+  author={Wu, Xiyang and Chandra, Rohan and Guan, Tianrui and Bedi, Amrit and Manocha, Dinesh}, 
+  booktitle={7th Annual Conference on Robot Learning}, 
+  year={2023}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

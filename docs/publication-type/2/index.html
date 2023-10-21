@@ -241,44 +241,6 @@
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-217727406-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-217727406-1', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
   
 
 
@@ -317,7 +279,7 @@
   <meta property="og:description" content="Ph.D. in Electrical and Computer Engineering"><meta property="og:image" content="https://wuxiyang1996.github.io/images/icon_hu246a7c5ca50c5215763d04ff4b959e84_299833_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://wuxiyang1996.github.io/images/icon_hu246a7c5ca50c5215763d04ff4b959e84_299833_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2021-11-02T02:06:07-08:00">
+    <meta property="og:updated_time" content="2023-09-01T18:04:35-07:00">
   
 
   
@@ -495,7 +457,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#featured"><span>Research</span></a>
+          <a class="nav-link " href="/#featured"><span>Highlights</span></a>
         </li>
 
         
@@ -532,7 +494,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          <a class="nav-link " href="/#publication"><span>Publications</span></a>
         </li>
 
         
@@ -685,22 +647,10 @@
     
     
     <div>
-      <h2><a href="/publication/bark_2021/" >BARK-COVID: An XGBoost Model to Predict Hospitalization at time of COVID-19 Diagnosis</a></h2>
+      <h2><a href="/publication/liu-2020/" >A novel image registration-based dynamic photometric stereo method for online defect detection in aluminum alloy castings</a></h2>
       <div class="article-style">
         
-          This project intends to develop a prediction model with machine learning methods for COVID-19 diagnosis. The model reads patients' clinical history, bio-medical measurements and physical features and make binary classification that predicts 30-day hospital admission for COVID-19 patients. The baseline methods include ElasticNet, Gaussian Naive Bayes Classifier and Logistic Regression. The prediction is evaluated by several metrics based on the confusion matrix. The final prediction model achieves an accuracy over 80%.
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/publication/liu-2020/" >Online defects detection method for gearboxcover based on the four-source photometric stereo method</a></h2>
-      <div class="article-style">
-        
-          This project intends to realize the online scratch inspection tasks on the surface of the complex components. The deviation introduced by conveyer is compensated with shape template matching. The surface variation is reconstructed through photometric stereo method, which helps to extract the defect via local grayscale comparsion.
+          Digital Signal Processing, Vol. 141, Sep 2023
         
       </div>
     </div>

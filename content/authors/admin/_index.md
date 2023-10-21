@@ -22,8 +22,9 @@ bio: My research interests include reinforcement learning, machine learning and 
 
 interests:
 - Reinforcement Learning
-- Machine Learning
-- Optimization
+- Autonomous Driving
+- Large Language Model
+- Robotics
 
 education:
   courses:
@@ -72,7 +73,6 @@ user_groups:
 - Researchers
 - Visitors
 ---
+My name is Xiyang Wu. I am a Ph.D. student in Electrical and Computer Engineering at [University of Maryland, College Park](https://umd.edu/) and a member of [GAMMA](https://gamma.umd.edu/) group. My research advisor is Prof. [Dinesh Manocha](https://www.cs.umd.edu/people/dmanocha). I hold a Master's degree from [Georgia Institute of Technology](https://www.gatech.edu/), where I was working with Prof. [Matthew Gombolay](https://core-robotics.gatech.edu/people/matthew-gombolay/). Before that, I earned my Bachelor's in Engineering from [Tianjin University](https://www.tju.edu.cn/english/index.htm), supervised by Prof. [Xiaodong Zhang](https://scholar.google.com/citations?user=as6X3L0AAAAJ&hl=en).
 
-I am a first-year Ph.D. student in Electrical and Computer Engineering at University of Maryland. My research interests mainly covers reinforcement learning, machine learning and optimization.
-
-Previously, I recevied my M.S. Degree from Georgia Institute of Technology and B.Eng. Degree from Tianjin Universtiy. I used to be a research assistant on multi-agent reinforcement learning supervised by Dr. Matthew Gombolay. I also have research experiences about signal processing and data analysis when I worked with Dr. Rishikesan Kamaleswaran.
+My research interest lies in using the reasoning ability of neural networks and Large Language Models in robot decision-making and navigation tasks. Specifically, incorporating Large Language Models with reinforcement learning approaches in multi-agent coordination, scene understanding, and opponents' intention inference when navigating and collaborating under complex and heterogeneous environments.

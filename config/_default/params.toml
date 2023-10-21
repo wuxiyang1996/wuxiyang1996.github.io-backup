@@ -270,12 +270,6 @@ plugins_js  = []
   api_key = ""
   zoom = 15
 
-############################
-## Marketing
-############################
-[marketing]
-  google_analytics = "UA-217727406-1"
-  google_tag_manager = ""
 
 ############################
 ## Content Management System

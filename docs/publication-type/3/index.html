@@ -241,44 +241,6 @@
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-217727406-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-217727406-1', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
   
 
 
@@ -317,7 +279,7 @@
   <meta property="og:description" content="Ph.D. in Electrical and Computer Engineering"><meta property="og:image" content="https://wuxiyang1996.github.io/images/icon_hu246a7c5ca50c5215763d04ff4b959e84_299833_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://wuxiyang1996.github.io/images/icon_hu246a7c5ca50c5215763d04ff4b959e84_299833_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2021-08-10T02:06:07-08:00">
+    <meta property="og:updated_time" content="2023-09-30T16:23:35-07:00">
   
 
   
@@ -495,7 +457,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#featured"><span>Research</span></a>
+          <a class="nav-link " href="/#featured"><span>Highlights</span></a>
         </li>
 
         
@@ -532,7 +494,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          <a class="nav-link " href="/#publication"><span>Publications</span></a>
         </li>
 
         
@@ -685,10 +647,10 @@
     
     
     <div>
-      <h2><a href="/publication/signal_2021/" >Translation Model from PPG to ABP</a></h2>
+      <h2><a href="/publication/lancar-2023/" >LANCAR: Leveraging Language for Context-Aware Robot Locomotion in Unstructured Environments</a></h2>
       <div class="article-style">
         
-          This project intends to develop the translation model that interprets non-invasive blood pressure measurement Photoplethysmography (PPG) into invasive measurement Arterial Blood Pressure (ABP). Several distinct approaches have been made to achieve this goal. The first approach uses generative model for time series translation, while another one extracts indirect measurements for PPG signal and investigate their co-relation with systolic and diastolic blood pressure extracted from ABP signal. Heart Rate Variability (HRV) analysis is also made to achieve an overall image of all kinds of blood pressure measurements.
+          arXiv preprint arXiv:2310.00481 (submitted to ICRA 2024)
         
       </div>
     </div>
@@ -697,22 +659,10 @@
     
     
     <div>
-      <h2><a href="/publication/marl_2020/" >Learning Heterogeneous Multi-agent Communication for Joint Perception-Control Tasks</a></h2>
+      <h2><a href="/publication/firecommander-2020/" >Firecommander: An interactive, probabilistic multi-agent environment for joint perception-action tasks</a></h2>
       <div class="article-style">
         
-          Focusing on the coopeartive heterogenous MARL in FireCommander2020 environment, which is highly dynamic and stochastic, this project intends to investigate and propose a multi-agent communication learning framework to improve the cooperative behavior in collaborative Markov games and existing MARL algorithms.
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/publication/rl_2020/" >FireCommander: An Interactive, Probabilistic Multi-agent Environment for Joint Perception-Action Tasks</a></h2>
-      <div class="article-style">
-        
-          The FireCommander is an interactive, probabilistic joint perception-action reconnaissance environment. In FireCommander game, a composite team of agents must be tasked to optimally deal with a dynamic, propagating wildfire situation in an environment with propagating fire areas and facilities. The team of agents can accomplish their mission by first sensing, communicating the sensed fire-information among each other and then taking action to put the firespots out based on the sensed information. The FireCommander environment can be useful for research topics from Reinforcement Learning to Human-Robot Interaction.
+          arXiv:2011.001653
         
       </div>
     </div>

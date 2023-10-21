@@ -241,44 +241,6 @@
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-217727406-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-217727406-1', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
   
 
 
@@ -317,7 +279,7 @@
   <meta property="og:description" content="Ph.D. in Electrical and Computer Engineering"><meta property="og:image" content="https://wuxiyang1996.github.io/images/icon_hu246a7c5ca50c5215763d04ff4b959e84_299833_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://wuxiyang1996.github.io/images/icon_hu246a7c5ca50c5215763d04ff4b959e84_299833_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2021-11-02T02:06:07-08:00">
+    <meta property="og:updated_time" content="2023-09-30T16:23:35-07:00">
   
 
   
@@ -495,7 +457,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#featured"><span>Research</span></a>
+          <a class="nav-link " href="/#featured"><span>Highlights</span></a>
         </li>
 
         
@@ -532,7 +494,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          <a class="nav-link " href="/#publication"><span>Publications</span></a>
         </li>
 
         
@@ -696,9 +658,6 @@
         
         
       
-        
-        
-      
 
       <div class="form-row mb-4">
         <div class="col-auto">
@@ -709,6 +668,10 @@
           <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
             <option value="*">Type</option>
             
+            
+            <option value=".pubtype-1">
+              Conference paper
+            </option>
             
             <option value=".pubtype-2">
               Journal article
@@ -726,8 +689,8 @@
             
             
             
-            <option value=".year-2021">
-              2021
+            <option value=".year-2023">
+              2023
             </option>
             
             <option value=".year-2020">
@@ -746,7 +709,7 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2021">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2023">
           
             <div class="pub-list-item" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
@@ -758,11 +721,11 @@
     
 
   
-  <span >Blake Anderson</span>, <span >Xiyang Wu*</span>, <span >Theodore M Johnson II</span>, <span >Rebecca Steinberg</span>, <span >Amit Shah</span>, <span >James O&#39;Keefe</span>, <span >Rishikesan Kamaleswaran</span>
+  <span >chak lam shek*</span>, <span >xiyang wu*</span>, <span >dinesh manocha</span>, <span >pratap tokekar</span>, <span >amrit singh bedi (* indicates equal contributions)</span>
   </span>
-  (2021).
-  <a href="/publication/bark_2021/">BARK-COVID: An XGBoost Model to Predict Hospitalization at time of COVID-19 Diagnosis</a>.
-  PLOS ONE (Manuscript Submitted).
+  (2023).
+  <a href="/publication/lancar-2023/">LANCAR: Leveraging Language for Context-Aware Robot Locomotion in Unstructured Environments</a>.
+  arXiv preprint arXiv:2310.00481.
   
   <p>
 
@@ -774,146 +737,13 @@
 
 
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2021">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  
-  <span >Xiyang Wu*</span>, <span >Rishikesan Kamaleswaran</span>
-  </span>
-  (2021).
-  <a href="/publication/signal_2021/">Translation Model from PPG to ABP</a>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2020">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  
-  <span >Xiyang Wu*</span>, <span >Esmaeil Seraj</span>, <span >Matthew Gombolay</span>
-  </span>
-  (2020).
-  <a href="/publication/marl_2020/">Learning Heterogeneous Multi-agent Communication for Joint Perception-Control Tasks</a>.
-  Special Problem Report.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/marl_2020/Xiyang_Wu_Presentation.pdf" target="_blank" rel="noopener">
-  Slides
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2310.00481.pdf" target="_blank" rel="noopener">
+  PDF
 </a>
 
 
@@ -921,6 +751,170 @@
 
 
 
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://raaslab.org/projects/LLM_Context_Estimation/" target="_blank" rel="noopener">
+  Project
+</a>
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2023">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span >haoyue liu</span>, <span >xiyang wu</span>, <span >ning yan</span>, <span >zexiao li</span>, <span >xiaodong zhang</span>
+  </span>
+  (2023).
+  <a href="/publication/liu-2020/">A novel image registration-based dynamic photometric stereo method for online defect detection in aluminum alloy castings</a>.
+  Digital Signal Processing, Volume 141, September 2023, 104165.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.sciencedirect.com/science/article/abs/pii/S1051200423002609" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2023">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span >xiyang wu</span>, <span >rohan chandra</span>, <span >tianrui guan</span>, <span >amrit singh bedi</span>, <span >dinesh manocha</span>
+  </span>
+  (2023).
+  <a href="/publication/iplan-2023/">iPLAN: Intent-Aware Planning in Heterogeneous Traffic via Distributed Multi-Agent Reinforcement Learning</a>.
+  7th Annual Conference on Robot Learning (CoRL), Nov. 2023, Atlanta, GA.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2306.06236.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/wuxiyang1996/iPLAN" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/iPLAN-2023/IROS2023_Poster.pdf" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+
+
+
+
+
+
 </p>
 
   
@@ -948,11 +942,11 @@
     
 
   
-  <span >Esmaeil Seraj</span>, <span >Xiyang Wu*</span>, <span >Matthew Gombolay</span>
+  <span >esmaeil seraj</span>, <span >xiyang wu</span>, <span >matthew gombolay</span>
   </span>
   (2020).
-  <a href="/publication/rl_2020/">FireCommander: An Interactive, Probabilistic Multi-agent Environment for Joint Perception-Action Tasks</a>.
-  arxiv: 2011.00165.
+  <a href="/publication/firecommander-2020/">Firecommander: An interactive, probabilistic multi-agent environment for joint perception-action tasks</a>.
+  arXiv:2011.00165.
   
   <p>
 
@@ -969,7 +963,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/rl_2020/2011.00165.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2011.00165.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -987,78 +981,9 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/rl_2020/FireCommander2020_Xiyang_Wu.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/FireCommander_2020/FireCommander2020_Xiyang_Wu.pdf" target="_blank" rel="noopener">
   Slides
 </a>
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2011.00165" target="_blank" rel="noopener">
-  Source Document
-</a>
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2020">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  
-  <span >Haoyue Liu</span>, <span >Xiyang Wu*</span>, <span >Ning Yan</span>, <span >Zexiao Li</span>, <span >Xiaodong Zhang</span>
-  </span>
-  (2020).
-  <a href="/publication/liu-2020/">Online defects detection method for gearboxcover based on the four-source photometric stereo method</a>.
-  IEEE Transactions on Instrumentation &amp; Measurement (Manuscript Submitted).
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
