@@ -3,7 +3,7 @@
 
 title: "A novel image registration-based dynamic photometric stereo method for online defect detection in aluminum alloy castings"
 authors: [Haoyue Liu, Xiyang Wu, Ning Yan, Zexiao Li, Xiaodong Zhang]
-date: 2023-09-01T18:04:35-07:00
+date: 2020-09-01T18:04:35-07:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).

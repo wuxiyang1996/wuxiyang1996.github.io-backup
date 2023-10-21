@@ -18,7 +18,7 @@ organizations:
   url: "https://www.umd.edu/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include reinforcement learning, machine learning and optimization.
+bio: My research interests include robotics, reinforcement learning, and large language model.
 
 interests:
 - Reinforcement Learning
@@ -49,9 +49,9 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/wu_xiyang
-- icon: google-scholar
-  icon_pack: ai
-  link: "Pending"
+- icon: graduation-cap
+  icon_pack: fas
+  link: https://scholar.google.com/citations?user=sI05dqQAAAAJ&hl=en
 - icon: github
   icon_pack: fab
   link: https://github.com/wuxiyang1996
