@@ -3,7 +3,7 @@
 
 title: "Firecommander: An interactive, probabilistic multi-agent environment for joint perception-action tasks"
 authors: [Esmaeil Seraj, Xiyang Wu, Matthew Gombolay]
-date: 2020-10-31T16:23:35-07:00
+date: 2020-10-31T16:24:35-07:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
