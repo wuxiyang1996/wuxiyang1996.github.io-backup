@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://wowchemy.com" target="_blank" rel="noopener"><img src="https://wowchemy.com/img/logo_200px.png" alt="Wowchemy Website Builder"></a></p>
 
 # Academic Template for [Hugo](https://github.com/gohugoio/hugo)
@@ -30,3 +31,6 @@ To help us develop this template and software sustainably under the MIT license,
 <!--
 [![Analytics](https://ga-beacon.appspot.com/UA-78646709-2/academic-kickstart/readme?pixel)](https://github.com/igrigorik/ga-beacon)
 -->
+=======
+# wuxiyang1996.github.io
+>>>>>>> 4fdb2d1aacf9fd90ab23a2486b260b86ca6fc940
