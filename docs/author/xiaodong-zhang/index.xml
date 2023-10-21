@@ -5,7 +5,7 @@
     <link>https://wuxiyang1996.github.io/author/xiaodong-zhang/</link>
       <atom:link href="https://wuxiyang1996.github.io/author/xiaodong-zhang/index.xml" rel="self" type="application/rss+xml" />
     <description>Xiaodong Zhang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Sep 2023 18:04:35 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Sep 2020 18:04:35 -0700</lastBuildDate>
     <image>
       <url>https://wuxiyang1996.github.io/images/icon_hu246a7c5ca50c5215763d04ff4b959e84_299833_512x512_fill_lanczos_center_2.png</url>
       <title>Xiaodong Zhang</title>
@@ -15,7 +15,7 @@
     <item>
       <title>A novel image registration-based dynamic photometric stereo method for online defect detection in aluminum alloy castings</title>
       <link>https://wuxiyang1996.github.io/publication/liu-2020/</link>
-      <pubDate>Fri, 01 Sep 2023 18:04:35 -0700</pubDate>
+      <pubDate>Tue, 01 Sep 2020 18:04:35 -0700</pubDate>
       <guid>https://wuxiyang1996.github.io/publication/liu-2020/</guid>
       <description>&lt;hr&gt;
 &lt;p&gt;The adoption of three-dimensional (3D) measurement technology for parts surface defect detection can improve inspection reliability. For online inspection purposes, 3D measurement technologies must possess the characteristics of high speed and high efficiency. The photometric stereo method is a potential 3D measurement method with high speed and low cost. However, the traditional photometric stereo method is unsuitable for dynamic scenes due to its initial design for static scenes. In this paper, we propose a novel dynamic photometric stereo method based on an image registration method. To achieve fast speed and high efficiency, we reduce the computational cost by automatically generating regions of interest (ROI). Additionally, we innovatively map the depth information (the surface normal vectors) to a mean curvature map of the surface and use it to detect defects, which combines the robustness of 3D methods and the fast speed of 2D methods. We designed experiments and the results showed that our method can detect defects on the surfaces of aluminum alloy castings accurately and robustly in an online manner. This paper also aims to reveal the importance of utilizing multidimensional information in high-speed online inspections.&lt;/p&gt;
